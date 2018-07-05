@@ -4,7 +4,7 @@
         <parameter key="sonata.transaction.manager.class">Sonata\PaymentBundle\Entity\TransactionManager</parameter>
     </parameters>
     <services>
-        <service id="sonata.transaction.manager" class="%sonata.transaction.manager.class%">
+        <service id="sonata.transaction.manager" class="%sonata.transaction.manager.class%" public="true">
             <argument>%sonata.payment.transaction.class%</argument>
             <argument type="service" id="doctrine"/>
         </service>

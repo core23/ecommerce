@@ -5,11 +5,11 @@
         <parameter key="sonata.invoice_element.manager.class">Sonata\InvoiceBundle\Entity\InvoiceElementManager</parameter>
     </parameters>
     <services>
-        <service id="sonata.invoice.manager" class="%sonata.invoice.manager.class%">
+        <service id="sonata.invoice.manager" class="%sonata.invoice.manager.class%" public="true">
             <argument>%sonata.invoice.invoice.class%</argument>
             <argument type="service" id="doctrine"/>
         </service>
-        <service id="sonata.invoice_element.manager" class="%sonata.invoice_element.manager.class%">
+        <service id="sonata.invoice_element.manager" class="%sonata.invoice_element.manager.class%" public="true">
             <argument>%sonata.invoice.invoice_element.class%</argument>
             <argument type="service" id="doctrine"/>
         </service>

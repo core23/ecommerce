@@ -5,11 +5,11 @@
         <parameter key="sonata.order.order_element.manager.class">Sonata\OrderBundle\Entity\OrderElementManager</parameter>
     </parameters>
     <services>
-        <service id="sonata.order.manager" class="%sonata.order.order.manager.class%">
+        <service id="sonata.order.manager" class="%sonata.order.order.manager.class%" public="true">
             <argument>%sonata.order.order.class%</argument>
             <argument type="service" id="doctrine"/>
         </service>
-        <service id="sonata.order.order_element.manager" class="%sonata.order.order_element.manager.class%">
+        <service id="sonata.order.order_element.manager" class="%sonata.order.order_element.manager.class%" public="true">
             <argument>%sonata.order.order_element.class%</argument>
             <argument type="service" id="doctrine"/>
         </service>
