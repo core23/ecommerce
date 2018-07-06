@@ -14,12 +14,12 @@ declare(strict_types=1);
 namespace Sonata\CustomerBundle\Block\Breadcrumb;
 
 use Sonata\BlockBundle\Block\BlockContextInterface;
-use Sonata\UserBundle\Block\Breadcrumb\BaseUserProfileBreadcrumbBlockService;
+use Sonata\SeoBundle\Block\Breadcrumb\BaseBreadcrumbMenuBlockService;
 
 /**
  * @author Sylvain Deloux <sylvain.deloux@ekino.com>
  */
-class CustomerAddressBreadcrumbBlockService extends BaseUserProfileBreadcrumbBlockService
+class CustomerAddressBreadcrumbBlockService extends BaseBreadcrumbMenuBlockService
 {
     /**
      * {@inheritdoc}
